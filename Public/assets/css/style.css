@@ -73,6 +73,7 @@ nav a:active {
   border-style: solid;
   border-radius: 10px;
   transition: 250ms;
+  background-color: rgba(255,255,255,1.0);
 }
 .produtos img {
   width: 70%;
