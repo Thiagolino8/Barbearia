@@ -1,283 +1,314 @@
+body{
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-    background-color: rgba(128,128,128,1.0);
-    padding: 20px 0;
+  background-color: rgba(136,136,136,1.0);
+  padding: 1rem 4rem;
 }
 
 header img {
-    width: 240px;
+  width: 10rem;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav {
-    position: absolute;
-    top: 75px;
-    right: 0;
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 nav a {
-    transition: 250ms;
-    text-transform: uppercase;
-    color: rgba(0,0,0,1.0);
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
+  transition: 250ms;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1.0);
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
 }
 
 nav a:hover {
-    color: rgba(199,141,25,1.0);
-    text-decoration: underline;
-    font-size: 25px;
+  color: rgba(199,141,25,1.0);
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 nav a:active {
-    color:rgba(64,224,208,1.0);
+  color:rgba(64,224,208,1.0);
 }
 
 .produtos {
-    width: 940px;
-    margin: 0 auto 10% auto;
-    padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 2rem;
+  flex-wrap: wrap;
 }
 
 .produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 33%;
-    height: 400px;
-    vertical-align: top;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border-color: rgba(0,0,0,1.0);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    transition: 250ms;
+  text-align: center;
+  width: 23rem;
+  height: 400px;
+  vertical-align: top;
+  margin: 1rem;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-color: rgba(0,0,0,1.0);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  transition: 250ms;
+}
+.produtos img {
+  width: 70%;
+  height: auto;
 }
 
 .produtos li:hover {
-    color: rgba(199,141,25,1.0);
-    border-color: rgba(199,141,25,1.0);
+  color: rgba(199,141,25,1.0);
+  border-color: rgba(199,141,25,1.0);
 }
 
 .produtos li:active {
-    color: rgba(64,224,208,1.0);
-    border-color: rgba(64,224,208,1.0);
+  color: rgba(64,224,208,1.0);
+  border-color: rgba(64,224,208,1.0);
 }
 
 .produtos li:hover h2 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+}
+main{
+  flex: 1 1 0%;
 }
 
 .preço {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .descrição {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-form {
-    margin: 40px auto;
-    width: 940px;
+.contato {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 
 form label, form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
 .input-padrão {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
 }
 
 .checkbox {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .enviar {
-    width: 50%;
-    padding: 15px 0;
-    background: rgba(255,166,0,1.0);
-    color: rgba(255,255,255,1.0);
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    transition: 250ms;
-    cursor: pointer;
+  width: 50%;
+  padding: 15px 0;
+  background: rgba(255,166,0,1.0);
+  color: rgba(255,255,255,1.0);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 250ms;
+  cursor: pointer;
 }
 
 .enviar:hover {
-    background: rgba(238,131,0,1.0);
-    transform: scale(1.2);
+  background: rgba(238,131,0,1.0);
+  transform: scale(1.2);
 }
 
 .tabela {
-    width: 940px;
-    margin: 20px auto 40px;
+  margin: 20px 0
 }
 
 thead {
-    background: rgba(128,128,128,1.0);
-    color:rgba(255,255,255,1.0);
-    font-weight: bold;
+  background: rgba(128,128,128,1.0);
+  color:rgba(255,255,255,1.0);
+  font-weight: bold;
 }
 
 td, th {
-    border: 1px solid rgba(0,0,0,1.0);
-    padding: 8px 15px
+  border: 1px solid rgba(0,0,0,1.0);
+  padding: 8px 15px
 }
 
 .banner {
-    width: 100%;
-    margin: 0 auto;
-    object-fit: cover;
-    object-position: center;
-    height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  height: 500px;
 }
 
 .titulo-principal {
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
-}                                               
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
 
 .principal {
-    padding: 3em 0;
-    background:rgba(254,254,254,1.0);
-    width: 940px;
-    margin: 0 auto;
+  padding: 3rem;
+  background:rgba(254,254,254,1.0);
+  margin: 0 auto;
 }
 
 .principal p {
-    margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
 .principal strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .principal em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .utensilios {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
-    border-radius: 50px
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+  border-radius: 50px
 }
 
 .mapa {
-    padding: 3em 0;
-    background: linear-gradient(rgba(254,254,254,1.0), rgba(136,136,136,1.0));
+  padding: 3em 0;
+  background: linear-gradient(rgba(254,254,254,1.0), rgba(136,136,136,1.0));
 }
 
 .mapa-conteudo {
-    width: 940px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .mapa p {
-    margin: 0 0 2em;
-    text-align: center;
+  margin: 0 0 2em;
+  text-align: center;
 }
 
 .video {
-    width: 560px;
-    margin: 2em auto;
+  width: 60%;
+  height: auto;
+  margin: 2em 0;
+  padding: 0 4rem;
 }
 
 .itens {
-    line-height: 1.5
+  line-height: 1.5
 }
 
 .itens:before {
-    content: "🟊";
+  content: "🟊";
 }
 
 .itens:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .beneficios {
-    padding: 3em 0;
-    background: rgba(136,136,136,1.0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  background: rgba(136,136,136,1.0);
 }
 
 .conteudo-beneficios {
-    width: 940px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .conteudo-beneficios ul {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .imagem-beneficios {
-    width: 60%;
-    transition: 300ms;
+  width: 60%;
+  transition: 300ms;
 }
 
 .imagem-beneficios:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 footer {
-    text-align: center;
-    background: url("../imagens/bg.jpg");
-    padding: 40px 0;
-    color: rgba(255,255,255,1.0);
-    font-size: 13px;
+  text-align: center;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../imagens/bg.jpg");
+  color: rgba(255,255,255,1.0);
+  font-size: 13px;
 }
 
 footer img{
-    width: 240px;
+  width: 5rem;
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos{
-        width: auto;
-    }
 
-    h1 {
-        text-align: center;
-    }
+  header {
+    padding: 0.5rem;
+  }
 
-    nav {
-        position: static;
-    }
+  nav li {
+    padding: 0.25rem 0;
+  }
 
-    .lista-beneficios, .imagem-beneficios, .produtos li, form {
-        width: 100%;
-    }
+  .conteudo-beneficios ul {
+    align-items: flex-start;
+  }
 
+.video {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
 }

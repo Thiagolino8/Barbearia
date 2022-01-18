@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home - Barbearia Mr. Barber</title>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="assets/fonts/Montserrat-Regular.ttf" rel="stylesheet" />
+	</head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width">
-        <title>Home - Barbearia Mr. Barber</title>
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="assets/fonts/Montserrat-Regular.ttf" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <div class="caixa">
-                <h1><img src="assets/imagens/logo.png" alt="Logo da barbearia Mr. Barber">
-                </h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <img class="banner" src="assets/imagens/banner.jpg" alt="Barbearia">
-        <main>
-            <section class="principal">
-                <h2 class="titulo-principal">Sobre a Barbearia Mr. Barber</h2>
-                <img class="utensilios" src="assets/imagens/utensilios.jpg"
-                    alt="Utensilios de barbearia">
-                <ul>
-                    <li>
-                        <p>Localizada no coração da cidade a <strong>Barbearia Mr.
-                                Barber</strong> traz para o mercado o que há de melhor
-                            para o seu cabelo e barba. Fundada em 2019, a Barbearia Mr.
-                            Barber já é destaque na cidade e conquista novos clientes a
-                            cada dia.</p>
-                    </li>
-                    <li>
-                        <p id="missao"><em>Nossa missão é:<strong>"Proporcionar
-                                    auto-estima e qualidade de vida aos
-                                    clientes"</strong></em>.</p>
-                    </li>
-                    <li>
-                        <p>Oferecemos profissionais experientes e antenados às mudanças no
-                            mundo da moda. O atendimento possui padrão de excelência e
-                            agilidade, garantindo qualidade e satisfação dos nossos
-                            clientes.</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="mapa">
-                <h3 class="titulo-principal">Nosso Estabelecimento</h3>
-                <p>Nosso estabelecimento está localizado no coração da cidade.</p>
-                <div class="mapa-conteudo">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7222456855025!2d-40.08936208551119!3d-13.855703981949475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x740aff452115fb9%3A0xfec8fc2d01c6c8ae!2sR.%20Maria%20E%C3%A7a%2C%20177b%20-%20Centro%2C%20Jequi%C3%A9%20-%20BA%2C%2045203-468!5e0!3m2!1spt-BR!2sbr!4v1623773314433!5m2!1spt-BR!2sbr"
-                        width="100%" height="300px" style="border-radius: 20px;"
-                        allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-            <section class="beneficios">
-                <h4 class="titulo-principal">Beneficios</h4>
-                <div class="conteudo-beneficios">
-                    <ul>
-                        <li class="itens">Atendimento ao cliente</li>
-                        <li class="itens">Espaço diferenciado</li>
-                        <li class="itens">Localização</li>
-                        <li class="itens">Profissionais qualificados</li>
-                        <li class="itens">Pontualidade</li>
-                        <li class="itens">Limpeza</li>
-                    </ul><img class="imagem-beneficios"
-                        src="assets/imagens/beneficios.jpg">
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/wcVVXUV0YUY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <img src="assets/imagens/logo-branco.png" alt="Logo da barbearia Mr. Barber">
-            <p>&copy; Copyright Barbearia Mr. Barber - 2021</p>
-        </footer>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/8.7.1/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-        <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-    </body>
-
+	<body>
+		<header>
+			<div class="caixa">
+				<div class="caixa-header">
+					<img
+						src="assets/imagens/logo.png"
+						alt="Logo da barbearia Mr. Barber"
+					/>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<img class="banner" src="assets/imagens/banner.jpg" alt="Barbearia" />
+		<main>
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Mr. Barber</h2>
+				<img
+					class="utensilios"
+					src="assets/imagens/utensilios.jpg"
+					alt="Utensilios de barbearia"
+				/>
+				<ul>
+					<li>
+						<p>
+							Localizada no coração da cidade a
+							<strong>Barbearia Mr. Barber</strong> traz para o mercado o que há
+							de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia
+							Mr. Barber já é destaque na cidade e conquista novos clientes a
+							cada dia.
+						</p>
+					</li>
+					<li>
+						<p id="missao">
+							<em
+								>Nossa missão é:<strong
+									>"Proporcionar auto-estima e qualidade de vida aos
+									clientes"</strong
+								></em
+							>.
+						</p>
+					</li>
+					<li>
+						<p>
+							Oferecemos profissionais experientes e antenados às mudanças no
+							mundo da moda. O atendimento possui padrão de excelência e
+							agilidade, garantindo qualidade e satisfação dos nossos clientes.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="mapa">
+				<h3 class="titulo-principal">Nosso Estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
+				<div class="mapa-conteudo">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7222456855025!2d-40.08936208551119!3d-13.855703981949475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x740aff452115fb9%3A0xfec8fc2d01c6c8ae!2sR.%20Maria%20E%C3%A7a%2C%20177b%20-%20Centro%2C%20Jequi%C3%A9%20-%20BA%2C%2045203-468!5e0!3m2!1spt-BR!2sbr!4v1623773314433!5m2!1spt-BR!2sbr"
+						width="90%"
+						height="300px"
+						style="border-radius: 20px"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+			</section>
+			<section class="beneficios">
+				<h4 class="titulo-principal">Beneficios</h4>
+				<div class="conteudo-beneficios">
+					<ul>
+						<li class="itens">Atendimento ao cliente</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais qualificados</li>
+						<li class="itens">Pontualidade</li>
+						<li class="itens">Limpeza</li>
+					</ul>
+					<img class="imagem-beneficios" src="assets/imagens/beneficios.jpg" />
+				</div>
+				<div class="video">
+					<iframe
+						width="100%"
+						height="315px"
+						src="https://www.youtube.com/embed/wcVVXUV0YUY"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<img
+				src="assets/imagens/logo-branco.png"
+				alt="Logo da barbearia Mr. Barber"
+			/>
+			<p>&copy; Copyright Barbearia Mr. Barber - 2021</p>
+		</footer>
+	</body>
 </html>
